@@ -267,17 +267,12 @@
 						"referenceName": "dataflow1",
 						"type": "DataFlowReference"
 					},
-					"staging": {
-						"linkedService": {
-							"referenceName": "ADLS_Source",
-							"type": "LinkedServiceReference"
-						}
-					},
 					"compute": {
 						"coreCount": 8,
 						"computeType": "General"
 					},
-					"traceLevel": "Fine"
+					"traceLevel": "Fine",
+					"runConcurrently": true
 				}
 			}
 		],

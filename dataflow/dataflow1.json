@@ -80,6 +80,7 @@
 				"          Variable_category as string,",
 				"          Value as string",
 				"     ),",
+				"     partitionFileNames:['Union Output.csv'],",
 				"     umask: 0022,",
 				"     preCommands: [],",
 				"     postCommands: [],",
