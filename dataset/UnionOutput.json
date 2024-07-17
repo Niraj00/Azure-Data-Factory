@@ -1,0 +1,60 @@
+{
+	"name": "UnionOutput",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_Source",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Union Ouptut.csv",
+				"fileSystem": "sampleoutputfiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Year",
+				"type": "String"
+			},
+			{
+				"name": "Industry_aggregation",
+				"type": "String"
+			},
+			{
+				"name": "Industry_code",
+				"type": "String"
+			},
+			{
+				"name": "Industry_name",
+				"type": "String"
+			},
+			{
+				"name": "Units",
+				"type": "String"
+			},
+			{
+				"name": "Variable_code",
+				"type": "String"
+			},
+			{
+				"name": "Variable_name",
+				"type": "String"
+			},
+			{
+				"name": "Variable_category",
+				"type": "String"
+			},
+			{
+				"name": "Value",
+				"type": "String"
+			}
+		]
+	}
+}
